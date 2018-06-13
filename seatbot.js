@@ -58,6 +58,7 @@ async function seatbot() {
           console.log("开始预约座位");
           await page.waitFor(".col.t-c");
           await page.touchscreen.tap(275, 295);
+          // 全程模拟人类点击
           await page.tap(".pickdate.dateChange");
           // 点击小时
           const point = dateXY(8, 30);
