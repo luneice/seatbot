@@ -60,7 +60,7 @@ async function seatbot() {
           await page.touchscreen.tap(275, 295);
           await page.tap(".pickdate.dateChange");
           // 点击小时
-          const point = dateXY(9, 20);
+          const point = dateXY(8, 30);
           await page.touchscreen.tap(point.h.x, point.h.y);
           // 点击分
           await page.touchscreen.tap(point.m.x, point.m.y);
